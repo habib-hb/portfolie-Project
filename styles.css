@@ -1,0 +1,94 @@
+
+*{
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  color: white;
+  max-width: 768px;
+  margin: 0 auto;
+   
+}
+
+
+#navbar{
+  display: flex;
+  position: sticky;
+  top: 0;
+  height: 8%;  
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  align-items: flex-end;
+
+}
+
+#navbar a{
+  color: lightblue;
+}
+
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding-top: 50vh;
+}
+
+#welcome-section h1{
+ color: white;
+ font-size: 40px;
+
+
+
+}
+
+#projects h2{
+  display: block;
+  color: lightblue;
+  text-align: center;
+}
+
+#project-collection{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.project-tile{
+  text-align: center;
+  max-width: 380px;
+  margin: 16px auto;/**/
+}
+
+.project-tile img{
+  width: 100vw;
+  max-width: 380px;
+  border-radius: 8px;
+}
+
+.project-tile a{
+  display: block;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+#contact{
+  text-align: center;
+  margin: 10px 0 24px 0;
+}
+
+@media only screen and (max-width: 800px){
+  #welcome-section h1{
+ color: white;
+ font-size: 24px;
+}
+}
